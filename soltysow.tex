@@ -1,0 +1,22 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[H]
+\centering
+\caption{Zestawienie wyników pomiarów i obliczeń.}
+\label{tab:my-table}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|r|r|r|r|r|r|}
+\hline
+\begin{tabular}[c]{@{}c@{}}Numer \\ klasy\\ przedziału\end{tabular} & Przedział $[\mu m]$         & \multicolumn{1}{c|}{$d_i[\mu m]$} & \multicolumn{1}{c|}{$\cfrac{1}{d_i}[\mu m]$} & \multicolumn{1}{c|}{$N_i$} & \multicolumn{1}{c|}{$N_i\cdot d_i [\mu m]$} & \multicolumn{1}{c|}{$\cfrac{n_i}{d_i} [\mu m^{-1}]$} & \multicolumn{1}{c|}{$\cfrac{p_i\cdot N_i\cdot d_i^2}{4} [\mu m^2]$} \\ \hline
+1                                                                   & (0-2,06\textgreater{}      & 1,03                           & 0,97                                      & 7                          & 7,21                                     & 6,80                                              & 5,83                                                             \\ \hline
+2                                                                   & (2,06-4,12\textgreater{}   & 3,09                           & 0,32                                      & 40                         & 123,60                                   & 12,94                                             & 299,81                                                           \\ \hline
+3                                                                   & (4,12-6,18\textgreater{}   & 5,15                           & 0,19                                      & 63                         & 324,45                                   & 12,23                                             & 1311,67                                                          \\ \hline
+4                                                                   & (6,18-8,24\textgreater{}   & 7,21                           & 0,14                                      & 47                         & 338,87                                   & 6,52                                              & 1917,95                                                          \\ \hline
+5                                                                   & (8,24-10,3\textgreater{}   & 9,27                           & 0,11                                      & 10                         & 92,70                                    & 1,08                                              & 674,57                                                           \\ \hline
+6                                                                   & (10,30-12,36\textgreater{} & 11,33                          & 0,09                                      & 8                          & 90,64                                    & 0,71                                              & 806,16                                                           \\ \hline
+7                                                                   & (12,36-14,42\textgreater{} & 13,39                          & 0,07                                      & 3                          & 40,17                                    & 0,22                                              & 422,23                                                           \\ \hline
+8                                                                   & (14,92-16,5\textgreater{}  & 15,95                          & 0,06                                      & 4                          & 63,80                                    & 0,25                                              & 798,82                                                           \\ \hline
+\multicolumn{4}{|c|}{suma}                                                                                                                                                    & 182                        & 1081,44                                  & 40,75                                             & 6237,05                                                          \\ \hline
+\end{tabular}%
+}
+\end{table}

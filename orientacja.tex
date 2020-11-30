@@ -1,0 +1,28 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+% \usepackage[table.xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option. i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[H]
+    \centering
+    \caption{Pomiar orientacji powierzchni.}
+    \label{tab:my-table}
+    \resizebox{0.7\textwidth}{!}{%
+    \begin{tabular}{|c|r|r|r|r|r|r|l}
+    \cline{1-7}
+    Kąt   & \multicolumn{1}{c|}{$0^\circ$} & \multicolumn{1}{c|}{$30^\circ$} & \multicolumn{1}{c|}{$60^\circ$} & \multicolumn{1}{c|}{$90^\circ$} & \multicolumn{1}{c|}{$120^\circ$} & \multicolumn{1}{c|}{$150^\circ$} &                  \\ \cline{1-7}
+    1     & 9                              & 5                                                    & 9                                                    & 7                                                    & 15                                                    & 7                                                     &                                       \\ \cline{1-7}
+    2     & 5                              & 8                                                    & 8                                                    & 6                                                    & 8                                                     & 2                                                     &                                       \\ \cline{1-7}
+    3     & 6                              & 4                                                    & 9                                                    & 6                                                    & 12                                                    & 5                                                     &                                       \\ \cline{1-7}
+    4     & 9                              & 11                                                   & 11                                                   & 7                                                    & 9                                                     & 8                                                     &                                       \\ \cline{1-7}
+    5     & 9                              & 4                                                    & 8                                                    & 6                                                    & 7                                                     & 5                                                     &                                       \\ \cline{1-7}
+    6     & 9                              & 9                                                    & 6                                                    & 6                                                    & 7                                                     & 1                                                     &                                       \\ \cline{1-7}
+    7     & 6                              & 8                                                    & 13                                                   & 7                                                    & 9                                                     & 4                                                     &                                       \\ \cline{1-7}
+    8     & 5                              & 5                                                    & 13                                                   & 6                                                    & 7                                                     & 1                                                     &                                       \\ \cline{1-7}
+    9     & 9                              & 12                                                   & 5                                                    & 6                                                    & 7                                                     & 9                                                     &                                       \\ \cline{1-7}
+    10    & 12                             & 6                                                    & 8                                                    & 6                                                    & 8                                                     & 3                                                     & \multicolumn{1}{r}{}                  \\ \hline
+    Średnia  & 7.9                             & 7.2                                                   & 9.0                                                   & 6.3                                                   & 8.9                                                    & 4.5                                                    & \multicolumn{1}{c|}{$\overline{P}_L$ i $\overline{S}_V$} \\ \hline
+    $P_L$ & 474                           & 432                                                 & 540                                                  & 378                                                 & 534                                                  & 270                                                   & \multicolumn{1}{r|}{438}             \\ \hline
+    $S_V$ & 948                           & 864                                                 & 1080                                                  & 756                                                 & 1068                                                  & 540                                                   & \multicolumn{1}{r|}{876}             \\ \hline
+    \end{tabular}%
+    }
+    \end{table}

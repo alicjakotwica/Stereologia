@@ -11,55 +11,258 @@
 
 \section{Cel ćwiczenia}
 
+Wyznaczenie udziału objętościowego, rozwinięcie powierzchni oraz wielkości ziaren.
+
 \section{Wprowadzenie}
+
+Stereologia to nauka o przestrzennej budowie materiałów i metodach ich ilościowego opisu w oparciu o pomiary wykonane na płaskich przekrojach materiałów. Podstawowe parametry charakteryzujące elementy mikrostrukturę tworzywa to udział objętościowy $V_V$, rozwinięcie powierzchni $S_V$ oraz wielkość ziaren $N_A$.
+
+Wyróżnia się 2 metody wyznaczania udziału objętościowego faz $V_v$, które wynikają z równania stereologicznego:
+
+$$V_V=A_A=L_L=P_P$$
+
+\begin{enumerate}
+    \item Metoda liniową, która polega na pomiarze sumy długości  odcinków przypadających na daną fazę i odniesieniu jej do całkowitej długości linii przyłożonej do analizowanego zgładu. Metoda pracochłonna, ale przydatna przy określaniu udziału objętościowego faz znajdujących się w małych ilościach i liniowo zorientowanych. 
+    \item Metoda punktową, która opiera się na rachunku prawdopodobieństwa  prawdopodobieństwo trafienia punktu rzuconego losowo na powierzchnię zgładu w daną fazę jest równa stosunkowi powierzchni zajmowanej przez tą fazę do całej powierzchni zgładu i nie zależy od kształtu oraz rozmieszczenia badanej fazy. Wyróżnia się 2 warianty tej metody – metodę punktów losowych oraz metodę punktów rozłożonych systematycznie (metoda siatkowa).
+\end{enumerate}
+
+\newpage
+
+Do wyznaczenia rozwinięcia powierzchniowego wyróżnia się 2 metody :
+
+\begin{enumerate}
+    \item  Metoda siecznych przypadkowych, Sieczną o długości ”l” rzuca się przypadkowo ”k” razy na fotografię o powiększeniu ”p” i zlicza się liczbę przecięć siecznej ”n” z granicami ziaren, z granicami ziarno - por w każdym rzucie. Średnia liczba przecięć na jednostkę długości $P_L$.
+    \item  Metoda siecznych skierowanych,odpowiednio do kierunków zorientowanych osi czy płaszczyzn badanego materiału, można badać zarówno tekstury izomeryczne jak również zorientowane. W tym przypadku można wyznaczyć średnią liczbę przecięć granic ziaren na jednostkę długości siecznych przy niewielkiej liczbie zgładów, a ze znajomości $P_L$ wyznaczymy rozwinięcie powierzchni jakie przypada na jednostkę objętości. Najbardziej poglądową charakterystykę orientacji układu linii na płaszczyźnie, a zarazem bardzo czułym wskaźnikiem istnienia nawet niewielkiego zorientowania linii jest tzw. „róża liczby przecięć” zaproponowana przez Sołtykowa. Przedstawia ona zależność między średnią liczbą przecięć na jednostkową długość siecznych a kierunkiem siecznych we współrzędnych biegunowych.
+\end{enumerate}
+
+W celu wyznaczenia wielkości ziaren  stosujemy :
+
+\begin{enumerate}
+    \item Metoda odwrotności średnic Sołtykowa, która polega na zmierzeniu średnicy wszystkich przekrojów badanych ziaren znajdujących się na powierzchni zgładu.Pomiary średnicy dla każdego ziarna wykonać należy  w dwu wzajemnie prostopadłych kierunkach.
+    \item Metoda Jeffriesa, która jest najprostsza. Na obraz zgładu nanosimy prostokąt o bokach a i b, który dzieli nam ziarna na trzy grupy: z, w i u.
+\end{enumerate}
+
+
+Literatura
+
+Metody Badań „Mikroskopia Optyczna” część B, Jan Piekarczyk
+
+\newpage
 
 \section{Aparatura i materiały}
 
+Aparatura:
+\begin{itemize}
+    \item komputer
+\end{itemize}
+
+Materiały:
+\begin{itemize}
+    \item linijka,
+    \item kątomierz,
+    \item kalka techniczna,
+    \item mikrostruktura kompozytu włókno C/żywica epoksydowa
+    \item mikrostruktura grafitu $p=300x$
+\end{itemize}
+
+
 \section{Wyniki i obliczenia}
 
-\subsection{Udział objętościowy}
+\subsection{Udział objętościowy $V_V$}
 
-$$V_V=\cfrac{\sum _i P_{ik}}{P_k}$$
+Na kalce narysowałyśmy siatkę o oczkach $1.5$ x $1.5 cm$. Następnie przyłożyłyśmy siatkę do wydrukowanej kartki i zaznaczyłyśmy przecięcia z faza włókna C/żywica epoksydowa, na tej podstawie wyznaczyłyśmy udziały objętościowe faz i minimalną ilość przyłożeń siatki. Pomiary powtórzyłyśmy jeszcze 9 razy używając różnych wartości węzłów. Podobne czynności przeprowadzono dla metody liniowej. Odcinek o długości $10cm$ przykładałyśmy w przypadkowych miejscach, a następnie zliczyłyśmy punkty przecięcia. 
+
+Na podstawie otrzymanych wyników obliczyłyśmy udział objętościowy fazy $\alpha$, a następnie obliczyłyśmy szacunkową minimalną wartość przyłożeń siatki ze wzoru:
+
+$$n\ge \cfrac{t^2 \cdot (1-V_V(\alpha))}{\gamma^2 \cdot k \cdot V_V(\alpha)}$$
+
+gdzie:
+
+$n$ - szacunkowa minimalna liczba przyłożeń siatki
+
+$k$ - liczba węzłów siatki
+
+$V_V(\alpha)$ - udział objętościowy fazy $\alpha$
+
+$\gamma$ - błąd względny wynoszący $0.05$, dla prawdopodobieństwa $95\%$ $(t=1.96)$
+\newpage
+
+$$\mu=\overline{V}\pm t \cdot s(\overline{V})=\overline{V}\pm \cfrac{t\cdot s}{\sqrt{n}}=\overline{V}\pm \delta = \overline{V}\pm \gamma \cdot \overline{V}$$
 
 Gdzie:
 
-$V_V$ - udział objętościowy,
+$\gamma=\cfrac{t\cdot s}{\overline{V}\cdot \sqrt{n}}$
 
-$P_{ik}$ - suma punktów w fazie,
+$\overline{V}$ - wyliczona średnia dla próbki pobranej populacji
 
-$P_k$ - suma wszystkich punktów.
+$s(\overline{V})$ - oszacowany błąd standardowy
+
+$s$ - oszacowane odchylenie standardowe
+
+$x$ - wartości mierzone 
+
+$n$ - liczba pomiarów
+
+$t$ - zmienna standaryzowana ($t=1.96$ dla prawdopodobieństwa $95\%$ $\alpha=0.05$)
+
+$\delta$ - błąd bezwzględny
+
+$\gamma$ - błąd względny
+
+$s=\sqrt{\cfrac{\Sigma (V-\overline{V})^2}{n-1}}$
+
+\subsubsection{Metoda punktowa}
+
+Po dokonanych obliczeniach wiemy, że szacunkowa minimalna wartość przyłożeń siatki wynosi $n\ge 193$.
+
+\input{faza_alfa}
+
+Przedział ufności dla metody punktowej wynosi $\mu=0.16\pm 0.0541$.
+
+Błąd względny wynosi $\gamma=0.1073$.
+
+\subsubsection{Metoda liniowa}
+
+Po dokonanych obliczeniach wiemy, że szacunkowa minimalna wartość przyłożeń linii wynosi $n\ge 51$.
+
+\input{faza_alfa2}
+
+Przedział ufności dla metody punktowej wynosi $\mu=0.23\pm 0.1211$.
+
+Błąd względny wynosi $\gamma=0.1651$.
+
 
 \subsection{Rozwinięcie powierzchni $S_V$}
 
-$$S_V=\cfrac{\sum ^n_{i=1} S_i}{V}$$
+Na kartce narysowaliśmy linię $10cm$, a następnie przyłożyłyśmy do zdjęcia i policzyłyśmy ilość przeciętych granic międzyziarnowych. Później wykonałyśmy poniższe obliczenia, a wyniki zestawiłyśmy w tabeli 4.  Natomiast w metodzie siecznych skierowanych na kartce narysowaliśmy linie o długości $5cm$. Następnie za pomocą kątomierza narysowano 5 linii, każda o długości $5cm$, pod kątami $30^\circ$, $60^\circ$, $90^\circ$, $120^\circ$ i $150^\circ$. Przyłożono do fotografii i zmierzono 10-krotnie liczbę przecięć z każdą linia. Wyniki zanotowano w tabeli 2.
+Powiększenie zdjęcia  wynosi 300x , które zastosowano w obliczeniach.
+\newline
+
+Przedział ufności dla obydwóch pomiarów został policzony ze wzoru:
+$$\mu = S_V\pm t\cdot s$$
+\newline 
+
+Błąd względny dla obydwóch pomiarów policzono ze wzoru:
+
+$$\gamma=\cfrac{t\cdot s}{S_V\cdot \sqrt{n}}$$
+
+\subsubsection{Pomiar rozwinięcia powierzchni}
+
+W celu obliczenia ilości przecięć na jednostkę długości odcinka wykorzystaliśmy wzór:
+
+$$P_L=\cfrac{P}{L}$$
 
 Gdzie:
 
-$S_V$ - rozwinięcie powierzchni,
+$P$ - ilość przeciętych granic międzyziarnowych
 
-$S_i$ - suma powierzchni,
+$L$ - długość odcinka w cm.
+\newline
 
-$V$ - objętość, jaką zajmują ziarna.
+Do policzenia rozwinięcia powierzchni wykorzystaliśmy wzór:
 
-$$\overline{P}_L=\cfrac{p}{k\cdot l}\sum^k_{i=1}n_i$$
+$$S_V=\cfrac{2p}{k\cdot l} \sum ^k_{i=1}n_i$$
 
-Gdzie:
-
-$\overline{P}_L$ - średnia liczba przecięć na jednostkę długości 
+gdzie:
 
 $p$ - powiększenie
 
 $k$ - liczba pomiarów
 
-$l$ - długość
+$l$ - długość odcinka
 
-$n_i$ - liczba punktów przecięcia z granicą faz
+$n_i$ - liczba przecięć z granicą faz
+
+\input{rozwiniecie}
+
+Błąd względny wyniósł:
+
+$$\gamma=0.20$$
+
+\subsubsection{Pomiar orientacji powierzchni granicznych}
+
+W celu obliczenia ilości przecięć na jednostkę długości odcinka wykorzystaliśmy wzór:
+
+$$P_L=\cfrac{P}{L} \cdot p$$
+
+Gdzie:
+
+$P$ - ilość przeciętych granic międzyziarnowych,
+
+$L$ - długość odcinka w cm,
+
+$p$ - powiększenie.
+\newline
+
+Do policzenia rozwinięcia powierzchni wykorzystaliśmy wzór:
+
+$$S_V= 2\cdot P_L$$
+
+\input{orientacja.tex}
+
+Odchylenie standardowe dla pomiaru orientacji powierzchni granicznych 
+
+wynosi:
+$$s=205.48$$
+
+Przedział ufności dla pomiaru orientacji powierzchni granicznych wynosi:
+$$\mu = 876\pm 402.73$$
+
+Błąd względny dla pomiaru orientacji powierzchni granicznych wynosi:
+$$\gamma = 0.15$$
+\newline
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{img/Mapka liczby przecięć.pdf}
+\end{figure}
+
+
+Na podstawie mapki przecięć widzimy, że najmniej przecięć jest przy $150^{\circ}$. Oznacza to, że ziarno może być spłaszczone w tym kierunku. Widzimy również, że ziarna nie są ukierunkowane w jedną stronę, tylko w trzy. Dlatego nie można stwierdzić, że ziarna były ułożone podłużnie.  
+Ziarna mogą być kuliste.
 
 \subsection{Wielkość ziaren}
 
+Zmierzono średnicę wszystkich nie przeciętych brzegiem zdjęcia ziaren. Wykonano pomiar w dwóch prostopadłych kierunkach, a następnie wyliczono wartość średnią $d$ dla każdego ziarna. Wyniki zestawiono w tabeli 5.
+
+Znaleźliśmy ziarno z największą średnicą $d_{max}$, którym jest ziarno numer 93 i podzieliliśmy tą wielkość na osiem równych części, dzięki czemu ustaliliśmy wartości przedziałów. Pogrupowano wyniki do odpowiednich przedziałów i wyliczono średnicę przekrojów di, która jest środkową wartością każdego przedziału i jej odwrotność. Wykonano pozostałe obliczenia uwzględniając powiększenie p=1200. Wyniki zestawiono w tabeli ....
+Następnie wyliczono parametry przestrzenne ziaren: liczbę ziaren na jednostkę objętości $N_V$, średnią wielkość ziaren $\overline{D}$, średnie odchylenie kwadratowe średnic ziaren $\sigma D$ oraz udział objętościowy $V_V$.
+
+Następnie wyliczono parametry przestrzenne ziaren: liczbę ziaren na jednostkę objętości $N_V$, średnią wielkość ziaren $\overline{D}$, średnie odchylenie kwadratowe oraz udział objętościowy $V_V$.
+
+Wartość $d$ policzyliśmy ze wzoru:
+
+$$d=\cfrac{l+m}{2}$$
+
+gdzie:
+
+$l$ i $k$ - wymiary prostopadłych do siebie średnic ziarna
+
+\input{srednice_pomiary}
+
+\input{soltysow}
+
+Pozostałych obliczeń dokonaliśmy za pomocą wzorów:
+
+$$\overline{d}=\cfrac{\sum N_id_i}{N}$$
+
+$$\overline{d}=5.94[\mu m]$$
+
+$$\overline{d^{-1}}=\cfrac{\sum N_id_i^{-1}}{N}$$
+
+$$\overline{d^{-1}}=0.22[\mu m^{-1}]$$
+
 $$N_A=\cfrac{p^2}{a\cdot b}(z+0.5w+0.25u)$$
 
+$$N_A=\cfrac{1200^2}{102\cdot 80}(216+0.5\cdot 65+0.25\cdot 2)=88374672.16[mm^{-2}]$$
+
 Gdzie:
+
+$\overline{d}$ - średnią średnicę
+
+$\overline{d^{-1}}$ - odwrotność średniej średnicy
+
+$N$ - suma liczebności
 
 $N_A$ - liczba ziaren mierzonych na jednostkowej powierzchni zgładu,
 
@@ -73,8 +276,53 @@ $w$ - liczba ziaren przeciętych przez brzegi prostokąta,
 
 $u$ - liczba ziaren leżących w narożach prostokąta.
 
+$$N_V=\cfrac{2}{\pi}\cdot \overline{d^{-1}} \cdot N_A$$
+
+$$N_V=88341.08[mm^{-3}]$$
+
+$$\overline{D}=\cfrac{\pi}{2}\cdot \overline{d^{-1}}^{-1}$$
+
+$$\overline{D}=7.01[\mu m]$$
+
+$$\sigma_D=\sqrt{\cfrac{4}{\pi}\cdot \overline{d}\cdot \overline{D} - \overline{D}^2}$$
+
+$$\sigma_D=1.98 [\mu m]$$
+
+$$A=\cfrac{a\cdot b}{p^2}$$
+
+$$A=0.005666[mm^2]=5666[\mu m^2]$$
+
+$$V_V=\cfrac{\sum N_id_i^2}{4\cdot A}$$
+
+$$V_V=51.60$$
+
+Gdzie:
+
+$N_V$ - liczba ziaren na jednostkę objętości
+
+$\overline{D}$ - średnia wielkość ziaren
+
+$\sigma_D$ - średnie odchylenie kwadratowe średnic ziaren
+
+$A$ - pole powierzchni fotografii
+
+$V_V$ - udział objętościowy
 
 \section{Podsumowanie i wnioski}
+
+\subsection{Udział objętościowy $V_V$}
+
+\input{podsumowanie_Vv}
+
+Obydwie metody, zarówno metoda liniowa jak i punktowa, dały podobne  do siebie wyniki wartości udziału fazy $\alpha$ (różnią się wartością około $0.07$), co może świadczyć, że metody są do siebie zbliżone. W przypadku metody punktowej błąd względny wynosi  około $0.10$, nie jest to duży błąd, świadczy to  o dokładności przeprowadzonych obliczeń, natomiast w metodzie liniowej błąd względny wynosi  $0.16$, jest on wyższy niż w metodzie punktowej. Przyczyną mogła być niedokładność  podczas wykonywania  ćwiczenia spowodowana niepoprawnym odczytaniem wyników lub złego przyłożenia linijki.
+
+\subsection{Rozwinięcie powierzchni $S_V$}
+
+\input{podsumowanie_Sv}
+
+Dzięki znajomości ilości przecięć na dany odcinek oraz uwzględniając powiększenie otrzymanej mikrofotografii, mogłyśmy obliczyć rozwinięcie powierzchni materiału porowatego. Niektóre z obliczonych wartości znacznie się od siebie różnią, te rozbieżności spowodowały tak duże wartości przedziału ufności i odchylenia standardowego. W metodzie siecznych przypadkowych rozwiniecie powierzchni jest większe niż w przypadku metodzie siecznych skierowanych.
+
+\subsection{Wielkość ziaren}
 
 \section{Załączniki wyników}
 
