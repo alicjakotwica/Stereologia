@@ -17,7 +17,7 @@ Wyznaczenie udziału objętościowego, rozwinięcie powierzchni oraz wielkości 
 
 Stereologia to nauka o~przestrzennej budowie materiałów i~metodach ich ilościowego opisu w~oparciu o~pomiary wykonane na płaskich przekrojach materiałów. Podstawowe parametry charakteryzujące elementy mikrostrukturę tworzywa to udział objętościowy $V_V$, rozwinięcie powierzchni $S_V$ oraz wielkość ziaren $N_A$.
 
-Wyróżnia się 2 metody wyznaczania udziału objętościowego faz $V_v$, które wynikają z~równania stereologicznego:
+Wyróżnia się {\color{purple}3} metody wyznaczania udziału objętościowego faz $V_v$, które wynikają z~równania stereologicznego:
 
 $$V_V=A_A=L_L=P_P$$
 
@@ -110,9 +110,18 @@ $\delta$ - błąd bezwzględny
 $\gamma$ - błąd względny
 
 $s=\sqrt{\cfrac{\Sigma (V-\overline{V})^2}{n-1}}$
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/VV.png}
+\end{figure}
+
 \newpage
 
 \subsubsection{Metoda punktowa}
+
+{\color{purple}
+Stworzona siatka zawsze była obejmowana cała przez zdjęcie, a więc liczba punktów leżących na zdjęciu zawsze wynosiła $k=42$. }
 
 Po dokonanych obliczeniach wiemy, że szacunkowa minimalna wartość przyłożeń siatki wynosi $n\ge 193$.
 
@@ -134,6 +143,14 @@ Przedział ufności dla metody punktowej wynosi $\mu=0.23\pm 0.1211$.
 Błąd względny wynosi $\gamma=0.1651$.
 \newpage
 
+{\color{purple}
+\subsubsection{Podsumowanie i wnioski}
+
+\input{podsumowanie_Vv}
+
+Obydwie metody, zarówno metoda liniowa jak i~punktowa, dały podobne  do siebie wyniki wartości udziału fazy $\alpha$ (różnią się wartością około $0.07$), co może świadczyć, że metody są do siebie zbliżone. W~przypadku metody punktowej błąd względny wynosi  około $0.10$, nie jest to duży błąd, świadczy to  o~dokładności przeprowadzonych obliczeń, natomiast w~metodzie liniowej błąd względny wynosi  $0.16$, jest on wyższy niż w~metodzie punktowej. Przyczyną mogła być niedokładność  podczas wykonywania  ćwiczenia spowodowana niepoprawnym odczytaniem wyników lub złego przyłożenia linijki.}
+\newpage
+
 \subsection{Rozwinięcie powierzchni $S_V$}
 
 Na kartce narysowaliśmy linię $10cm$, a~następnie przyłożyłyśmy do zdjęcia i~policzyłyśmy ilość przeciętych granic międzyziarnowych. Później wykonałyśmy poniższe obliczenia, a~wyniki zestawiłyśmy w~tabeli 4.  Natomiast w~metodzie siecznych skierowanych na kartce narysowaliśmy linie o~długości $5cm$. Następnie za pomocą kątomierza narysowano 5 linii, każda o~długości $5cm$, pod kątami $30^\circ$, $60^\circ$, $90^\circ$, $120^\circ$ i~$150^\circ$. Przyłożono do fotografii i~zmierzono 10-krotnie liczbę przecięć z~każdą linia. Wyniki zanotowano w~tabeli 2.
@@ -148,6 +165,11 @@ Błąd względny dla obydwóch pomiarów policzono ze wzoru:
 
 $$\gamma=\cfrac{t\cdot s}{S_V\cdot \sqrt{n}}$$
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/SV.png}
+\end{figure}
+
 
 \subsubsection{Pomiar rozwinięcia powierzchni}
 
@@ -160,7 +182,6 @@ Gdzie:
 $P$ - ilość przeciętych granic międzyziarnowych
 
 $L$ - długość odcinka w~cm.
-\newpage
 
 Do policzenia rozwinięcia powierzchni wykorzystaliśmy wzór:
 
@@ -168,7 +189,7 @@ $$S_V=\cfrac{2p}{k\cdot l} \sum ^k_{i=1}n_i$$
 
 gdzie:
 
-$p$ - powiększenie
+{\color{purple}$p$ - powiększenie ($p=300x$)}
 
 $k$ - liczba pomiarów
 
@@ -177,11 +198,11 @@ $l$ - długość odcinka
 $n_i$ - liczba przecięć z~granicą faz
 
 \input{rozwiniecie}
+\newpage
 
 Błąd względny wyniósł:
 
 $$\gamma=0.20$$
-\newpage
 
 \subsubsection{Pomiar orientacji powierzchni granicznych}
 
@@ -221,9 +242,17 @@ $$\gamma = 0.15$$
     \includegraphics[width=\textwidth]{img/Mapka liczby przecięć.pdf}
 \end{figure}
 
+{\color{purple}
+Na podstawie mapki przecięć widzimy, że najmniej przecięć jest przy $150^{\circ}$. Nie jesteśmy w stanie stwierdzić na podstawie tego wykresu w jakim kierunku jest ziarno spłaszczone. Widzimy również, że ziarna nie są ukierunkowane w~jedną stronę, tylko w~trzy. 
+}
 
-Na podstawie mapki przecięć widzimy, że najmniej przecięć jest przy $150^{\circ}$. Oznacza to, że ziarno może być spłaszczone w~tym kierunku. Widzimy również, że ziarna nie są ukierunkowane w~jedną stronę, tylko w~trzy. Dlatego nie można stwierdzić, że ziarna były ułożone podłużnie.  
-Ziarna mogą być kuliste.
+\newpage
+{\color{purple}
+\subsubsection{Podsumowanie i wnioski}
+
+\input{podsumowanie_Sv}
+
+Dzięki znajomości ilości przecięć na dany odcinek oraz uwzględniając powiększenie otrzymanej mikrofotografii, mogłyśmy obliczyć rozwinięcie powierzchni materiału porowatego. Niektóre z~obliczonych wartości znacznie się od siebie różnią, te rozbieżności spowodowały tak duże wartości przedziału ufności i~odchylenia standardowego. W~metodzie siecznych przypadkowych rozwiniecie powierzchni jest większe niż w~przypadku metodzie siecznych skierowanych.}
 \newpage
 
 \subsection{Wielkość ziaren}
@@ -243,23 +272,30 @@ gdzie:
 
 $l$ i~$k$ - wymiary prostopadłych do siebie średnic ziarna
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/wielkosc.png}
+\end{figure}
+
 \input{srednice_pomiary}
 
 \input{soltysow}
 
+{\color{purple}
 Pozostałych obliczeń dokonaliśmy za pomocą wzorów:
 
 $$\overline{d}=\cfrac{\sum N_id_i}{N}$$
 
-$$\overline{d}=5.94[\mu m]$$
+$$\overline{d}=5.00[\mu m]$$
 
 $$\overline{d^{-1}}=\cfrac{\sum N_id_i^{-1}}{N}$$
 
-$$\overline{d^{-1}}=0.22[\mu m^{-1}]$$
+$$\overline{d^{-1}}=0.27[\mu m^{-1}]$$
 
 $$N_A=\cfrac{p^2}{a\cdot b}(z+0.5w+0.25u)$$
 
-$$N_A=\cfrac{1200^2}{102\cdot 80}(216+0.5\cdot 65+0.25\cdot 2)=88374672.16[mm^{-2}]$$
+$$N_A=\cfrac{1200^2}{102\cdot 80}(216+0.5\cdot 65+0.25\cdot 2)=43941.18[mm^{-2}]$$
+}
 
 Gdzie:
 
@@ -280,26 +316,29 @@ $z$ - liczba ziaren leżących całkowicie wewnątrz prostokąta,
 $w$ - liczba ziaren przeciętych przez brzegi prostokąta,
 
 $u$ - liczba ziaren leżących w~narożach prostokąta.
+\newpage
 
+{\color{purple}
 $$N_V=\cfrac{2}{\pi}\cdot \overline{d^{-1}} \cdot N_A$$
 
-$$N_V=88341.08[mm^{-3}]$$
+$$N_V=7584.41[\mu m^{-3}]$$
 
 $$\overline{D}=\cfrac{\pi}{2}\cdot \overline{d^{-1}}^{-1}$$
 
-$$\overline{D}=7.01[\mu m]$$
+$$\overline{D}=5.79[\mu m]$$
 
 $$\sigma_D=\sqrt{\cfrac{4}{\pi}\cdot \overline{d}\cdot \overline{D} - \overline{D}^2}$$
 
-$$\sigma_D=1.98 [\mu m]$$
+$$\sigma_D=18.3 [\mu m]$$
 
 $$A=\cfrac{a\cdot b}{p^2}$$
 
-$$A=0.005666[mm^2]=5666[\mu m^2]$$
+$$A=0.005667[mm^2]=5667[\mu m^2]$$
 
 $$V_V=\cfrac{\sum N_id_i^2}{4\cdot A}$$
 
-$$V_V=51.60$$
+$$V_V=0.15=15\%$$
+}
 
 Gdzie:
 
@@ -312,23 +351,22 @@ $\sigma_D$ - średnie odchylenie kwadratowe średnic ziaren
 $A$ - pole powierzchni fotografii
 
 $V_V$ - udział objętościowy
+\newpage
+
+{\color{purple}
+\subsubsection{Podsumowanie i wnioski}
+
+Porównując $d_d$ z~$\overline{D}$, można zauważyć, że $\overline{D}$ ma większą wartość. Rozbieżność różni się od siebie (5.00, 5.79 $\mu m$). Może to być spowodowane tym, że ziarna są  przecinane w~różnych miejscach i~nie zawsze średnica przekroju jest równa średnicy ziarna. Przez to, że ziarna są na różnych wysokościach wynik jest zaniżony. Bardziej wiarygodna jest zatem wartość $\overline{D}$ .}
 
 \section{Podsumowanie i~wnioski}
 
-\subsection{Udział objętościowy $V_V$}
+{\color{purple}
+Metoda liniowa i punktowa miały podobne do siebie wyniki, świadczy o tym , że metody są do siebie zbliżone.
 
-\input{podsumowanie_Vv}
+W przypadku rozwinięcia powierzchni metoda siecznych skierowanych powierzchnia jest mniejsza niż w metodzie siecznych przypadkowych, którą obliczyłyśmy. Wynika to prawdopodobnie ze złych odczytanych wartości, błędu ludzkiego, ponieważ występują  wartości przedziału ufności i odchylenia standardowego.
 
-Obydwie metody, zarówno metoda liniowa jak i~punktowa, dały podobne  do siebie wyniki wartości udziału fazy $\alpha$ (różnią się wartością około $0.07$), co może świadczyć, że metody są do siebie zbliżone. W~przypadku metody punktowej błąd względny wynosi  około $0.10$, nie jest to duży błąd, świadczy to  o~dokładności przeprowadzonych obliczeń, natomiast w~metodzie liniowej błąd względny wynosi  $0.16$, jest on wyższy niż w~metodzie punktowej. Przyczyną mogła być niedokładność  podczas wykonywania  ćwiczenia spowodowana niepoprawnym odczytaniem wyników lub złego przyłożenia linijki.
-
-\subsection{Rozwinięcie powierzchni $S_V$}
-
-\input{podsumowanie_Sv}
-
-Dzięki znajomości ilości przecięć na dany odcinek oraz uwzględniając powiększenie otrzymanej mikrofotografii, mogłyśmy obliczyć rozwinięcie powierzchni materiału porowatego. Niektóre z~obliczonych wartości znacznie się od siebie różnią, te rozbieżności spowodowały tak duże wartości przedziału ufności i~odchylenia standardowego. W~metodzie siecznych przypadkowych rozwiniecie powierzchni jest większe niż w~przypadku metodzie siecznych skierowanych.
-
-\subsection{Wielkość ziaren}
-Porównując $d_d$ z~$\overline{D}$, można zauważyć, że $\overline{D}$ ma większą wartość.Rozbieżność różni się od siebie (5.94, 7.01). Może to być spowodowane tym, że ziarna są  przecinane w~różnych miejscach i~nie zawsze średnica przekroju jest równa średnicy ziarna. Przez to, że ziarna są na różnych wysokościach wynik jest zaniżony. Bardziej wiarygodna jest zatem wartość $\overline{D}$ .
+Przy pomiarze wielkości ziaren Wykorzystana metoda wyznaczenia średniej wielkości ziaren jest zdecydowanie metodą długotrwałą. Niestety wykorzystując wyłącznie tą metodę ciężko jest określić, czy otrzymane
+wyniki są wiarygodne, jednakże sposób zdecydowanie jest ciekawy. Ze względu na złożony proces, łatwo o wystąpienie błędu pomiarowego, który może być zniwelowany jedynie większą ilością danych do opracowania. }
 
 
 \end{document}
