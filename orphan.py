@@ -18,6 +18,7 @@ if __name__ == "__main__":
     for f in files_to_correct:
         lines=[]
         with open(f,"r") as doc:
+            print(f)
             lines=doc.readlines()
         with open(f,"w") as doc:
             for line in lines:
