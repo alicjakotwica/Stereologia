@@ -31,7 +31,20 @@ $$V_V=A_A=L_L=P_P$$
 Do wyznaczenia rozwinięcia powierzchniowego wyróżnia się 2 metody:
 
 \begin{enumerate}
-    \item  Metoda siecznych przypadkowych, Sieczną o~długości "l" rzuca się przypadkowo "k" razy na fotografię o~powiększeniu "p" i~zlicza się liczbę przecięć siecznej "n" z~granicami ziaren, z~granicami ziarno - por w~każdym rzucie. Średnia liczba przecięć na jednostkę długości $P_L$.
+    \item  Metoda siecznych przypadkowych, {\color{blue} sieczną, polega na przyłożeniu do zdjęcia mikroskopowego, z sposób nieuporządkowany kalki z nakreśloną krzywą o znanej długości. Średnia liczba przecięć z układem powierzchni odniesienia do jednostki długości jest proporcjonalna do całkowitej powierzchni układu w jednostce objętości. 
+    
+$$S_V=\cfrac{2p}{k\cdot l} \sum ^k_{i=1}n_i$$
+
+gdzie:
+
+$p$ - powiększenie
+
+$k$ - liczba pomiarów
+
+$l$ - długość odcinka
+
+$n_i$ - liczba przecięć z~granicą faz
+    } 
     \item  Metoda siecznych skierowanych, odpowiednio do kierunków zorientowanych osi czy płaszczyzn badanego materiału, można badać zarówno tekstury izomeryczne jak również zorientowane. W~tym przypadku można wyznaczyć średnią liczbę przecięć granic ziaren na jednostkę długości siecznych przy niewielkiej liczbie zgładów, a~ze znajomości $P_L$ wyznaczymy rozwinięcie powierzchni, jakie przypada na jednostkę objętości. Najbardziej poglądową charakterystykę orientacji układu linii na płaszczyźnie, a~zarazem bardzo czułym wskaźnikiem istnienia nawet niewielkiego zorientowania linii jest tzw. "róża liczby przecięć" zaproponowana przez Sołtykowa. Przedstawia ona zależność między średnią liczbą przecięć na jednostkową długość siecznych a~kierunkiem siecznych we współrzędnych biegunowych.
 \end{enumerate}
 
@@ -39,7 +52,33 @@ W~celu wyznaczenia wielkości ziaren  stosujemy:
 
 \begin{enumerate}
     \item Metoda odwrotności średnic Sołtykowa, która polega na zmierzeniu średnicy wszystkich przekrojów badanych ziaren znajdujących się na powierzchni zgładu. Pomiary średnicy dla każdego ziarna wykonać należy  w~dwu wzajemnie prostopadłych kierunkach.
-    \item Metoda Jeffriesa, która jest najprostsza. Na obraz zgładu nanosimy prostokąt o~bokach a~i~b,~który dzieli nam ziarna na trzy grupy: z,~w~i~u.
+    \newpage
+    \item Metoda Jeffriesa, która jest najprostsza. Na obraz zgładu nanosimy prostokąt o~bokach a~i~b,~który dzieli nam ziarna na trzy grupy: z,~w~i~u.{\color{blue} 
+    
+    $$N_A=\cfrac{p^2}{a\cdot b}(z+0.5w+0.25u)$$
+    
+    gdzie: 
+    
+    p-powiększenie
+    
+    z-liczba ziaren leżących całkowicie wewnątrz prostokąta
+    
+    w-liczba ziaren przeciętych przez brzegi prostokąta 
+    
+    u-liczba ziaren leżących w~narożach prostokąta
+    
+    $a$ i~$b$ - długość boków prostokąta,
+    
+    } 
+    
+   {\color{blue} Do określania $N_V$ stosujemy metodę odwrotności średnic Sałtykowa. Do jej użycia konieczne jest wyznaczenie wszystkich średnic mierzonych ziaren. Mierzy się je ziarna wzdłuż i wszerz i dzieli się sumę tych wyników przez 2. Ze zmierzonych średnic, gdy mamy znaczną ich liczbę, buduje się szereg rozdzielczy o średnicach przekrojów $d_i$ i liczebności $N_i$. Liczbę wylicza się ze wzoru danego przez Sałtykowa: 
+   $$N_V=\cfrac{2}{\pi}\cdot \overline{d^{-1}} \cdot N_A$$
+   
+   $N_V$ - liczba ziaren na jednostkę objętości
+   }
+   \newline
+   
+   
 \end{enumerate}
 
 
@@ -123,6 +162,12 @@ $s=\sqrt{\cfrac{\Sigma (V-\overline{V})^2}{n-1}}$
 {\color{purple}
 Stworzona siatka zawsze była obejmowana cała przez zdjęcie, a więc liczba punktów leżących na zdjęciu zawsze wynosiła $k=42$. }
 
+{\color{blue} Za pomocą wzoru podanego poniżej policzyliśmy szacunkową minimalną wartość przyłożeń siatki.
+$$n\ge \cfrac{t^2 \cdot (1-V_V(\alpha))}{\gamma^2 \cdot k~\cdot V_V(\alpha)}$$
+
+$$n\ge \cfrac{1.96^2 \cdot (1-0.16)}{0.05^2 \cdot 42~\cdot 0.16}$$
+}
+
 Po dokonanych obliczeniach wiemy, że szacunkowa minimalna wartość przyłożeń siatki wynosi $n\ge 193$.
 
 \input{faza_alfa}
@@ -133,6 +178,12 @@ Błąd względny wynosi $\gamma=0.1073$.
 \newpage
 
 \subsubsection{Metoda liniowa}
+
+{\color{blue} Za pomocą wzoru podanego poniżej policzyliśmy szacunkową minimalną wartość przyłożeń linii.
+$$n\ge \cfrac{t^2 \cdot (1-V_V(\alpha))}{\gamma^2 \cdot k~\cdot V_V(\alpha)}$$
+
+$$n\ge \cfrac{1.96^2 \cdot (1-0.23)}{0.05^2 \cdot 100~\cdot 0.23}$$
+}
 
 Po dokonanych obliczeniach wiemy, że szacunkowa minimalna wartość przyłożeń linii wynosi $n\ge 51$.
 
@@ -252,14 +303,14 @@ Na podstawie mapki przecięć widzimy, że najmniej przecięć jest przy $150^{\
 
 \input{podsumowanie_Sv}
 
-Dzięki znajomości ilości przecięć na dany odcinek oraz uwzględniając powiększenie otrzymanej mikrofotografii, mogłyśmy obliczyć rozwinięcie powierzchni materiału porowatego. Niektóre z~obliczonych wartości znacznie się od siebie różnią, te rozbieżności spowodowały tak duże wartości przedziału ufności i~odchylenia standardowego. W~metodzie siecznych przypadkowych rozwiniecie powierzchni jest większe niż w~przypadku metodzie siecznych skierowanych.}
+Dzięki znajomości ilości przecięć na dany odcinek oraz uwzględniając powiększenie otrzymanej mikrofotografii, mogłyśmy obliczyć rozwinięcie powierzchni materiału porowatego. Niektóre z~obliczonych wartości znacznie się od siebie różnią, te rozbieżności spowodowały tak duże wartości przedziału ufności i~odchylenia standardowego.{\color{blue} W~metodzie siecznych przypadkowych rozwiniecie powierzchni jest większe niż w~przypadku metodzie siecznych skierowanych, różnica wynosi 162.}}
 \newpage
 
 \subsection{Wielkość ziaren}
 
 Zmierzono średnicę wszystkich nie przeciętych brzegiem zdjęcia ziaren. Wykonano pomiar w~dwóch prostopadłych kierunkach, a~następnie wyliczono wartość średnią $d$ dla każdego ziarna. Wyniki zestawiono w~tabeli 5.
 
-Znaleźliśmy ziarno z~największą średnicą $d_{max}$, którym jest ziarno numer 93 i~podzieliliśmy tą wielkość na osiem równych części, dzięki czemu ustaliliśmy wartości przedziałów. Pogrupowano wyniki do odpowiednich przedziałów i~wyliczono średnicę przekrojów di, która jest środkową wartością każdego przedziału i~jej odwrotność. Wykonano pozostałe obliczenia uwzględniając powiększenie p=1200. Wyniki zestawiono w~tabeli ....
+Znaleźliśmy ziarno z~największą średnicą $d_{max}$, którym jest ziarno numer 93 i~podzieliliśmy tą wielkość na osiem równych części, dzięki czemu ustaliliśmy wartości przedziałów. Pogrupowano wyniki do odpowiednich przedziałów i~wyliczono średnicę przekrojów $d_i$, która jest środkową wartością każdego przedziału i~jej odwrotność. Wykonano pozostałe obliczenia uwzględniając powiększenie p=1200. Wyniki zestawiono w~tabeli 8.
 Następnie wyliczono parametry przestrzenne ziaren: liczbę ziaren na jednostkę objętości $N_V$, średnią wielkość ziaren $\overline{D}$, średnie odchylenie kwadratowe średnic ziaren $\sigma D$ oraz udział objętościowy $V_V$.
 
 Następnie wyliczono parametry przestrzenne ziaren: liczbę ziaren na jednostkę objętości $N_V$, średnią wielkość ziaren $\overline{D}$, średnie odchylenie kwadratowe oraz udział objętościowy $V_V$.
